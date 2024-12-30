@@ -4,7 +4,8 @@
 <?php 
 	if(!isset($_SESSION['login_id']))
 	    header('location:homepage.php');
-	include 'header.php' 
+    include 'header.php';
+    include 'admin_class.php';
 ?>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
