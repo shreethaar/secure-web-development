@@ -1,0 +1,36 @@
+/project-root
+├── /config
+│   ├── database.php      # Handles the database connection
+│   └── config.php        # Configuration for app, routes, etc.
+├── /controllers
+│   ├── AuthController.php    # Handles user login, logout
+│   ├── RecipeController.php  # Manages recipe-related actions
+│   ├── ProductionController.php  # Handles production scheduling
+│   └── BatchController.php   # Manages batch tracking
+├── /models
+│   ├── UserModel.php      # Handles user data
+│   ├── RecipeModel.php    # Manages recipe-related database queries
+│   ├── ProductionModel.php   # Manages production scheduling data
+│   └── BatchModel.php     # Manages batch tracking and status
+├── /views
+│   ├── auth
+│   │   └── login.php      # Login form
+│   ├── recipe
+│   │   ├── create.php     # Form for creating a recipe
+│   │   ├── update.php     # Form for updating a recipe
+│   │   └── list.php       # List of recipes
+│   ├── production
+│   │   ├── schedule.php   # Form for creating/updating schedules
+│   │   └── list.php       # List of production schedules
+│   └── batch
+│       ├── track.php      # Batch tracking form
+│       └── status.php     # Batch status overview
+├── /public
+│   └── index.php          # Entry point for all routes
+├── /assets
+│   ├── /css               # Stylesheets
+│   ├── /js                # JavaScript files
+│   └── /images            # Image files for the UI
+└── /includes
+    └── header.php         # Header HTML used across all pages
+    └── footer.php         # Footer HTML used across all pages
